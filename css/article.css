@@ -1,0 +1,22 @@
+
+.article__list{
+    border: 1px solid black;
+    max-width: 25%;
+    box-shadow: 2px 2px 9px;
+    
+}
+
+.article__listItem{
+    padding: 5px;
+    margin: 10px auto;
+    margin-right: 90px;
+    
+}
+
+.article__link{
+    text-decoration: none;
+}
+
+.article__link--dark{
+    color: whitesmoke;
+}

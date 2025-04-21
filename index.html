@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinkcirz Beta</title>
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Normalizer -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"> <!-- Czcionka Google-->
+</head>
+
+<body class="body">
+    <p>
+        <button class="button"><strong class="themeName">Ciemny motyw</strong></button>
+    </p>
+    <h1 class="header">Prosty Kalkulator Walut </h1>
+   
+    <!-- Formularz kalkulator walut -->
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator Walut</legend>
+            <p class="form__item">
+                <label>
+                    Wymień: <input class="js-change" type="number" required name="Change" min="1" step="0.01" value="1">
+                    PLN
+                </label>
+            </p>
+            <p class="form__item">
+                Waluta:
+                <select class="js-currency" name="currency">
+                    <option value="EUR">EURO</option>
+                    <option value="GBP">FUNT</option>
+                    <option value="USD">Dolar</option>
+                    <option value="CHF">Frank Szwajcarski</option>
+                    <option value="UAH">Hrywna</option>
+                </select>
+            </p>
+            <p class="form__item">SUMA: <strong class="form__strong js-sum"></strong></p>
+            <p class="form__item">Kurs: <strong class="form__strong js-exchange"></strong></p>
+        </fieldset>
+        <button class="form__button">Oblicz</button>
+    </form>
+    <!-- Artykół -->
+    <article class="article">
+        <p class="article__text">
+            Prosty kalkulator do obliczenia wymiany złotówek na różne waluty, stworzony jako praca domowa podczas kursu
+            programowania z YouCode.
+            Waluty na jakie można przeliczyć polskie złotówki to:
+        </p>
+        <!-- lista w Artykule -->
+        <p>
+        <ul class="article__list">
+            <li class="article__listItem"><a class="article__link" target="_blank"
+                    href="https://www.google.com/search?q=kurs+dolara&client=opera-gx&sca_esv=d6336215de9d5f02&sxsrf=AHTn8zrkC4JNEw6lbu6_G6vm2tDFL72zbw%3A1745085963953&ei=C-YDaJvyOa66wPAP1pueoAg&oq=kurs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGt1cnMqAggAMg8QIxiABBgnGIoFGEYYggIyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMhkQABiABBiKBRhGGIICGJcFGIwFGN0E2AEBSO7hBFAAWMHcBHACeAGQAQCYAVygAbIEqgEBN7gBA8gBAPgBAZgCCaAC2wSoAhTCAgwQIxiABBgTGCcYigXCAgsQABiABBixAxiDAcICCxAuGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxjUAsICFBAuGIAEGLEDGNEDGIMBGMcBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAhAQABiABBixAxhDGIMBGIoFwgIHECMYJxjqAsICDRAjGPAFGCcYyQIY6gLCAhMQABiABBhDGLQCGIoFGOoC2AEBmAMG8QWTFINm4FuVs7oGBggBEAEYAZIHATmgB91JsgcBN7gH0AQ&sclient=gws-wiz-serp">Dolar</a>
+            </li>
+            <li class="article__listItem"><a class="article__link" target="_blank"
+                    href="https://www.google.com/search?client=opera-gx&q=kurs+euro&sourceid=opera&ie=UTF-8&oe=UTF-8">Euro</a>
+            </li>
+            <li class="article__listItem"><a class="article__link" target="_blank"
+                    href="https://www.google.com/search?q=kurs+franka+szwajcarskiego+do+pln&client=opera-gx&hs=sQc&sca_esv=97e4ebd26cccd6f2&sxsrf=AHTn8zrozpftDEL9PT5LyJjQME0A-sswdA%3A1745087706909&ei=2uwDaPygN5CowPAPjfmz-AY&oq=kurs+fra&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGt1cnMgZnJhKgIIADIPECMYgAQYJxiKBRhGGIICMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhkQABiABBiKBRhGGIICGJcFGIwFGN0E2AEBSPGZA1C4ggNY6YsDcAN4AZABAJgBTaAB9ASqAQE5uAEDyAEA-AEBmAINoALBCsICBxAjGLADGCfCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgQQIxgnwgINEAAYgAQYsQMYQxiKBZgDAIgGAZAGCroGBggBEAEYE5IHBjEyLjUtMaAH9VGyBwU5LjUtMbgHtgo&sclient=gws-wiz-serp">Frank
+                    szwajcarski</a></li>
+            <li class="article__listItem"><a class="article__link" target="_blank"
+                    href="https://www.google.com/search?q=kurs+funta&client=opera-gx&hs=UmH&sca_esv=97e4ebd26cccd6f2&sxsrf=AHTn8zqqzxDfa90odmOHELJAWIfrqqDpYA%3A1745087763040&ei=E-0DaL6QAub_wPAP1e7EgAs&oq=kurs+f&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmt1cnMgZioCCAEyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMggQABiABBixAzIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigVIngdQWlhacAF4AZABAJgBSaABSaoBATG4AQHIAQD4AQGYAgKgAlHCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBZgDAIgGAZAGCpIHATKgB6sIsgcBMbgHTA&sclient=gws-wiz-serp">Funt
+                    Brytyjski</a></li>
+            <li class="article__listItem"><a class="article__link" target="_blank"
+                    href="https://www.google.com/search?q=kurs+hrywny&client=opera-gx&hs=zRc&sca_esv=97e4ebd26cccd6f2&sxsrf=AHTn8zqEkLYPCDFOqJgY47rtYFQni8R_0g%3A1745087775179&ei=H-0DaNndCqOmwPAP2Liy-QM&oq=kurs+hr&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2t1cnMgaHIqAggAMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiOHVDIBlj5FXABeAGQAQCYAVSgAdABqgEBM7gBAcgBAPgBAZgCBKAC3gHCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgoQABiABBhDGIoFmAMAiAYBkAYKkgcBNKAHqRKyBwEzuAfaAQ&sclient=gws-wiz-serp">Hrywna</a>
+            </li>
+        </ul>
+        </p>
+
+        <p class="article__text">Kurs każdej z walut jest aktualny na dzień 19.04.2025r oraz w każdej chwili może ulec
+            zmianie, przez co w
+            przyszłości dane wyświetlone w pozycji <b>"SUMA" oraz "Kurs" mogą być nieaktualne!!</b> <br> Powyższa lista
+            posiada
+            aktywne linki do aktualnych walut, wymienionych w tym projekcie.</p>
+    </article>
+    <!-- Stopka -->
+    <footer class="footer"> © Copyright 2025 by Hubert Kuszlik </footer>
+</body>
+
+</html>
