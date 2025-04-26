@@ -15,11 +15,10 @@
     background-repeat: repeat;
     width: 100%;
     margin: none;
-
 }
 
 .background {
-    
+    border: 2px solid black;
     max-width: 1000px;
     margin: auto;
     margin: 20px auto;
