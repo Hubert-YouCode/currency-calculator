@@ -14,6 +14,13 @@
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+    background-image: url("../images/background.png");
+}
+
+.background {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .header {
@@ -61,89 +68,3 @@
     color: whitesmoke;
 }
 
-/* article.css */
-
-
-.article__list{
-    border: 1px solid black;
-    max-width: 25%;
-    box-shadow: 2px 2px 9px;
-    
-}
-
-.article__listItem{
-    padding: 5px;
-    margin: 10px auto;
-    margin-right: 90px;
-    
-}
-
-.article__link{
-    text-decoration: none;
-}
-
-.article__link--dark{
-    color: whitesmoke;
-}
-
-/* form.css */
-
-.form{
-    padding: 10px;
-
-}
-
-.form__legend{
-    padding: 10px;
-    border: 3px solid black;
-    border-radius: 40px;
-    background-color:  rgba(116, 188, 216, 0.253);
-    box-shadow: 2px 2px 2px ;
-    
-}
-
-.form__fieldset{
-    margin: auto;
-    border-radius: 25px;
-    border: 5px solid black;
-    box-shadow: 5px 5px 5px ;
-    background-color: rgba(128, 128, 128, 0.158);
-}
-
-.form__item{
-    padding: 5px;
-    margin-left: 20px ;
-}
-
-.form__strong{
-    color: rgba(255, 0, 0, 0.445);
-    font-size: 25px;
-}
-
-.form__strong--dark{
-    color: rgb(231 176 209 / 71%);
-    font-size: 25px;
-}
-
-.form__button{
-    margin: 20px auto;
-    width: 100%;
-    border-radius: 20px;
-    background-color: rgba(116, 188, 216, 0.253);
-    padding: 10px;
-    box-shadow: 5px 5px 5px ;
-}
-
-.form__button:hover {
-    background-color: rgba(116, 188, 216, 0.479);
-}
-
-.form__button--dark{
-    margin: 20px auto;
-    width: 100%;
-    border-radius: 20px;
-    background-color: rgba(116, 188, 216, 0.253);
-    padding: 10px;
-    box-shadow: 5px 5px 5px ;
-    color: whitesmoke;
-}

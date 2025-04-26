@@ -1,9 +1,10 @@
 // Kalkulator:
-let formElement = document.querySelector(".js-form");
-let changeElement = document.querySelector(".js-change");
-let currencyElement = document.querySelector(".js-currency")
-let sumElement = document.querySelector(".js-sum");
-let exchangeElement = document.querySelector(".js-exchange");
+{
+const formElement = document.querySelector(".js-form");
+const changeElement = document.querySelector(".js-change");
+const currencyElement = document.querySelector(".js-currency")
+const sumElement = document.querySelector(".js-sum");
+const exchangeElement = document.querySelector(".js-exchange");
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -45,15 +46,18 @@ formElement.addEventListener("submit", (event) => {
     sumElement.innerText = (sum.toFixed(2)+ symbol);
     exchangeElement.innerText = (exchange);
 });
+}
 
 // ciemny motyw
 
-let button = document.querySelector(".button");
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".themeName");
-let form__button = document.querySelector(".form__button");
-let article__link = document.querySelector(".article__link");
-let form__strong = document.querySelector(".form__strong");
+{
+const button = document.querySelector(".button");
+const body = document.querySelector(".background");
+const themeName = document.querySelector(".themeName");
+const form__button = document.querySelector(".form__button");
+const article__link = document.querySelector(".article__link");
+const form__strong = document.querySelector(".form__strong");
+
 
 
 
@@ -67,9 +71,9 @@ button.addEventListener("click", () => {
     };
 
     if (body.classList.contains("dark")){
-        button.classList = "buttonDark"
+        button.classList = "buttonDark";
     } else {
-        button.classList = "button"
+        button.classList = "button";
     };
 
     if (body.classList.contains("dark")){
@@ -81,9 +85,9 @@ button.addEventListener("click", () => {
     // Tu zaczyna się problem z modyfikatorami, mianowicie zmienia się klasa tylko jednego elementu "SUMA" i "DOLAR" Nie wiem w jaki sposób zrobić tak aby zmieniała się klasa w każdym z elementów.
 
     if (body.classList.contains("dark")){
-        article__link.classList = "article__link--dark"
+        article__link.classList = "article__link--dark";
     } else {
-        article__link.classList = "article__link"
+        article__link.classList = "article__link";
     };
 
     if (body.classList.contains("dark")){
@@ -94,4 +98,4 @@ button.addEventListener("click", () => {
 
 });
 
-
+}
