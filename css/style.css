@@ -11,13 +11,19 @@
 }
 
 .body {
-    max-width: 1000px;
-    margin: auto;
-    padding: 10px;
     background-image: url("../images/background.png");
+    background-repeat: repeat;
+    width: 100%;
+    margin: none;
+
 }
 
 .background {
+    
+    max-width: 1000px;
+    margin: auto;
+    margin: 20px auto;
+    padding: 10px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
